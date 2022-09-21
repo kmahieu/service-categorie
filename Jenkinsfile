@@ -5,14 +5,14 @@ pipeline {
     
     stage("git") {
       steps {
-        git branch : "main", url : "https://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@github.com/kmahieu/service-categorie.git"
+        git branch : "main", url : "https://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@github.com/kmahieu/service-categorie.git"
       }
     }
 
     stage("npm install") {
       steps {
           sh "npm install"
-          
+
       }
     }
 
