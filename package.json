@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kmahieu/service-categorie.git"
+    "url": "git+https://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@github.com/kmahieu/service-categorie.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kmahieu/service-categorie/issues"
+    "url": "https://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@github.com/kmahieu/service-categorie/issues"
   },
-  "homepage": "https://github.com/kmahieu/service-categorie#readme",
+  "homepage": "https://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@github.com/kmahieu/service-categorie#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
