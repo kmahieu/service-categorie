@@ -27,7 +27,7 @@ app.use(
 app.use('/', categoriesRoute);
 
 const CONNECTION_URL = 'mongodb+srv://admin:admin@cluster0.yf65c.mongodb.net/cda-eval-categorie?retryWrites=true&w=majority';
-const PORT = 2000;
+const PORT = 3000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`)))
