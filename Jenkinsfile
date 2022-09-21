@@ -37,9 +37,5 @@ pipeline {
         }
     }
 }
-    // stage("git") {
-    //   steps {
 
-    //   }
-    // }
   }
