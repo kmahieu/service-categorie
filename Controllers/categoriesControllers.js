@@ -16,6 +16,7 @@ export const getCategorie = async (req, res) => {
     try
     {
         console.log("ggggggg");
+        console.log(req.params.id);
         const upCategorie = await Categorie.findById(req.params.id);
         res.status(201).json(upCategorie);
     }catch (error) 

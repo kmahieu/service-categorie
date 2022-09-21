@@ -1,13 +1,13 @@
 pipeline {
   agent any
   tools {
-    nodejs '18.7.0'
+    "nodejs '18.7.0'"
   }
   stages {
     
     stage("git") {
       steps {
-        git branch : "main", url : "https://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@github.com/kmahieu/back-node.git"
+        git branch : "main", url : "https://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@github.com/kmahieu/service-categorie.git"
       }
     }
 
@@ -37,9 +37,5 @@ pipeline {
         }
     }
 }
-    // stage("git") {
-    //   steps {
 
-    //   }
-    // }
   }
