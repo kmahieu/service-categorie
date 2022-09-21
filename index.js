@@ -11,7 +11,7 @@ app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(
     cors({ 
-        Origin: 'http://localhost:4200', 
+        Origin: 'http://localhost:8100', 
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         allowedHeaders: [
             'Content-Type', 
@@ -26,9 +26,11 @@ app.use(
 
 app.use('/', categoriesRoute);
 
-const CONNECTION_URL = 'mongodb+srv://admin:admin@cluster0.yf65c.mongodb.net/cda-eval?retryWrites=true&w=majority';
-const PORT = 80;
+const CONNECTION_URL = 'mongodb+srv://admin:admin@cluster0.yf65c.mongodb.net/cda-eval-categorie?retryWrites=true&w=majority';
+const PORT = 2000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`)))
         .catch((error) => console.log(error.message));
+
+export default app;

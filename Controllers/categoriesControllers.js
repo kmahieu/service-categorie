@@ -1,4 +1,4 @@
-import User from '../Model/categoriesModel.js'
+import Categorie from '../Model/categoriesModel.js'
 import mongoose from 'mongoose'
 
 export var getCategories = async (req, res) => {
@@ -15,6 +15,7 @@ export var getCategories = async (req, res) => {
 export const getCategorie = async (req, res) => {
     try
     {
+        console.log("ggggggg");
         const upCategorie = await Categorie.findById(req.params.id);
         res.status(201).json(upCategorie);
     }catch (error) 
@@ -25,7 +26,7 @@ export const getCategorie = async (req, res) => {
 //wesh
 export const createCategorie = async (req, res) => {
     const body = req.body;
-    const newCategorie = new User(body);
+    const newCategorie = new Categorie(body);
 
     try {
 
