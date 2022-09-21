@@ -5,7 +5,7 @@ pipeline {
     
     stage("git") {
       steps {
-        git branch : "main", url : "https://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@github.com/kmahieu/service-categorie.git"
+        git branch : "main", url : "https://y+otEKSoOiqauOOgDkLFtvL2kW/4qWQkwKvLVWTAans@github.com/kmahieu/service-categorie.git"
       }
     }
 
